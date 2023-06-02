@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    h1 { color: red; }
+    
+    .top-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 16px;
+      text-align: center;
+      cursor: pointer;
+      z-index: 9999;
+    }
+    
+    .top-btn a {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    .heroimg {
+      background-image: url(bg.jpg);
+      background-size: cover;
+    }
+    
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .item {
+      flex-basis: 30%;
+      height: 100px;
+      background-color: #ccc;
+      margin-bottom: 20px;
+    }
+    
+    .title-box-1 {
+      position: absolute;
+      top: 30vh;
+      left: 10%;
+      width: 400px;
+    }
+    
+    .title-box-2 {
+      position: absolute;
+      top: 30vh;
+      right: 10%;
+      width: 400px;
+    }
+    
+    .title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 4rem;
+      color: teal;
+      font-weight: 700;
+    }
+    
+    .img-class {
+      width: 60px;
+      height: 45px;
+      max-width: 100%;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 20px;
+    }
+    
+    .grid-item {
+      text-align: center;
+    }
+    
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    }
+    
+    .marquee-content {
+      display: inline-block;
+      animation: marqueeAnimation 10s linear infinite;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    @keyframes marqueeAnimation {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    
+    body {
+      background-color: blue;
+    }
+    
+    
+  </style>
+</head>
+
+</html>
